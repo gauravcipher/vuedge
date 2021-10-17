@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vue app</title>
+</head>
+
+<body>
+  <div id="app">
+    Counter: {{ counter }}
+    <ve-button></ve-button>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="./../dist/vuedge.js"></script>
+  <script type="text/javascript">
+    const Counter = {
+      data() {
+        return {
+          counter: 0
+        }
+      }
+    }
+    const app = Vue.createApp(Counter);
+    app.use(Vuedge)
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
