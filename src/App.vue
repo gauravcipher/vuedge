@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   p Testing Out Components
-  ve-button(class="ve-primary")
+  ve-button(class="ve-primary xl") Primary
 </template>
 
 <script>
