@@ -2,16 +2,14 @@
 span
     button(v-bind="$attrs", class="_btn")
         slot Submit
-    p {{$attrs}} aaaadddddaaaxxxxxxxx
+    p {{$attrs}}
 </template>
 
 <script>
 </script>
 
 <style lang="scss">
-_btn {
-    .xl {
-        padding: 10px 20px;
-    }
+.xl {
+    padding: 10px 20px;
 }
 </style>
